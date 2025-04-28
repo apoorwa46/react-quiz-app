@@ -1,0 +1,133 @@
+/* src/App.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f7ff; /* Light cyan-blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+
+.quiz-title {
+  color: #2c3e50; /* Dark blue-gray title */
+  margin-bottom: 40px;
+  font-size: 2.8em;
+  font-weight: 500;
+}
+
+.progress-tracker {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.question-card {
+  background-color: #f9f9f9; /* Light gray question card */
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+.question-text {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.options-container {
+  display: grid;
+  grid-gap: 15px;
+  margin-bottom: 25px;
+}
+
+.option-button {
+  background-color: #fff;
+  color: #444;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px 25px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.option-button:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #222;
+}
+
+.option-button.selected {
+  background-color: #007bff; /* Primary blue for selected */
+  color: white;
+  border-color: #007bff;
+}
+
+.next-button,
+.restart-button {
+  background-color: #28a745; /* Success green */
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.next-button:hover,
+.restart-button:hover {
+  background-color: #218838;
+}
+
+.feedback {
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.feedback.correct {
+  color: #198754; /* Brighter success green */
+}
+
+.feedback.incorrect {
+  color: #dc3545; /* Error red */
+}
+
+.results-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.results-card h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 500;
+}
+
+.results-card p {
+  font-size: 1.3em;
+  color: #555;
+  margin-bottom: 35px;
+}
